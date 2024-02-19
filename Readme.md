@@ -11,7 +11,7 @@ Estas operaciones se eligen a través de un Switch(device)
 
 Devuelve el resultado o null, para que devuelva el resultado debemos trabajar con la clase Float.
 
-Aquí el [JavaDoc]()
+Aquí el [JavaDoc](https://ayesa14.github.io/Libreria-Operaciones-Basicas/package-summary.html)
 
 ## Pedir datos
 
