@@ -99,6 +99,14 @@ Tras esto, hacemos el merge con
 
 Cambiamos a la Rama Main y hacemos el merge
 
+Para crear el .jar vamos a project structure -> artifacts -> + -> JAR -> from modules with dependencies -> y en la Main class DEBE APARECER VACÍO
+
+Le damos a apply y a ok
+
+Creamos una etiqueta que la llamamos v1.1 y la subimos al repositorio
+
+A continuación de esa etiqueta creamos una release con el .jar
+
 A continuación hacemos el [JavaDoc]()
 
 
