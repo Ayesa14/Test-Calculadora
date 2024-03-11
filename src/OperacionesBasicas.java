@@ -9,15 +9,31 @@ public class OperacionesBasicas {
      * creamos las diferentes opciones a elegir  + el resultado
      */
     private static Float resultado = null;
+    /**
+     * Eleccion de operacion sumar
+     */
     static final int SUMA = 1;
+    /**
+     * Eleccion de operacion restar
+     */
     static final int RESTA = 2;
+    /**
+     * Eleccion de operacion multiplicar
+     */
     static  final int MULTIPLICACION = 3;
+    /**
+     * Eleccion de operacion dividir
+     */
     static  final  int DIVISION = 4;
+    /**
+     * Eleccion de operacion raiz
+     */
+    static final int RAIZ = 5;
 
     /**
-     * Constructor por defecto en privado ya qu eno queremso crear un objeto de esta librería
+     * Constructor por defecto en privado ya que no queremos crear un objeto de esta librería
      */
-    private OperacionesBasicas(){};
+    private OperacionesBasicas(){}
 
 
     /**
@@ -58,6 +74,17 @@ public class OperacionesBasicas {
                     resultado =num1 / num2;
                 }catch (Exception e){
                     System.out.println("ERROR EN LA DIVISIÓN");
+                }
+                break;
+            case RAIZ:
+                try{
+                    float radicando = num2;
+                    int indice = (int) num1;
+                    // raiz(n, x) = x^(1/n)
+                    resultado= (float)  Math.pow(radicando, 1.0 / indice);
+
+                }catch(NumberFormatException e){
+                    System.out.println("Error al realizar la operación RAIZ");
                 }
                 break;
             default:
